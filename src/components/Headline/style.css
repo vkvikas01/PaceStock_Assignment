@@ -1,0 +1,74 @@
+.cont{
+    border: none;
+}
+.card-img-top {
+    width: 100%;
+    height: 12rem;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+.cont ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: block;
+    border: none;
+}
+.cont ul li {
+    display: flex;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    align-items: flex-start;
+
+}
+.cont ul li:first-child{
+    padding-top: 0;
+}
+.cont ul li:last-child {
+    border-bottom: 0;
+}
+.cont ul li figure {
+    width: 40%;
+    height: 110px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.cont ul li figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    transition: 0.5s ease;
+}
+.cont ul li figure img:hover {
+    transform: scale(1.07);
+}
+.cont ul li figcaption {
+    width: 60%;
+    margin-left: 10px;
+    box-sizing: border-box;
+    text-align: start;
+}
+.cont ul li figcaption h4 {
+    font-size: 14px;
+    color: gray;
+}
+.cont ul li figcaption h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2E3032;
+    text-transform: capitalize;
+    text-align: start;
+}
+
+@media(max-width:767px){
+    .cont ul li {
+        flex-direction: row-reverse;
+    }
+    .cont ul li figcaption {
+        margin-left: 0;
+        margin-right: 10px;;
+    }
+}
